@@ -76,7 +76,6 @@ result.append({"Довжина ключа": "ВТ", "Індекс відпові
 text_result = f"Відкритий текст\n{plain_text}"
 
 lett_df = pd.read_excel("frequency_letter.xlsx")
-frequency_dict = lett_df.set_index('Letter')['Frequency'].to_dict()
 f_yo = lett_df.loc[lett_df['Letter'] == 'ё', 'Frequency'].values[0]
 f_e = lett_df.loc[lett_df['Letter'] == 'е', 'Frequency'].values[0]
 f_e_new = f_e + f_yo
